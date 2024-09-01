@@ -1,0 +1,9 @@
+li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+li>a{
+    color: white;
+    text-decoration: none;
+}

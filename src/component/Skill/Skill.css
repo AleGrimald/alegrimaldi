@@ -1,0 +1,31 @@
+.skill{
+    width: 100%;
+    height: 85dvh;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.skill_container{
+    width: 30%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_img{
+    width: 40%;
+    height: 80%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    
+    border-radius: 15px;
+    box-shadow:inset 0 0 15px white;
+
+    background-color: rgba(42, 85, 165, 0.3);
+}

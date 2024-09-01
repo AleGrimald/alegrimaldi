@@ -1,0 +1,52 @@
+.main_img{
+    width: 70%;
+    height: 60dvh;
+    border-radius: 50%;
+    animation: traslacion 1s ease-in-out, pulso 3.5s ease-in-out infinite;
+
+}
+
+.skill_img{
+    width: 64px;
+    height: 64px;
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+    margin-bottom: 1rem;
+}
+
+.formacion_img{
+    width: 260px;
+    height: 150px;
+    border-radius: 12px;
+}
+
+.formacion_link_img{
+    width: 18px;
+    height: 18px;
+    padding-left: .5rem;
+}
+
+
+
+@keyframes traslacion{
+    0%{
+        transform: translateX(100px) rotateY(0deg);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px) rotateY(360deg);
+    }
+}
+@keyframes pulso {
+    0%{
+        box-shadow: 0 0 1px 0px rgb(255, 255, 255);
+    }
+
+    50%{
+        box-shadow: 0 0 35px 2px rgb(255, 255, 255);
+    }
+
+    100%{
+        box-shadow: 0 0 1px 0px rgb(255, 255, 255);
+    }
+}
