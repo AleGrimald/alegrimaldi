@@ -1,5 +1,6 @@
 .main{
     width: 100%;
+    height: 80vh;
     padding: 2rem 2rem;
     box-sizing: border-box;
     display: flex;
@@ -7,15 +8,40 @@
     align-items: center;
 }
 
-.main_texto{
+.contenedor_texto{
     width: 50%;
-    padding: 0 1.5rem 1rem 1.5rem;
+    height: 75vh;
+    padding: 0;
+    margin: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-flow: column nowrap;
+    justify-content: end;
     align-items: center;
+    gap: 2rem;
+}
+
+.main_texto{
+    width: 100%;
+    height: 70%;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    
     border-radius: 12px;
-    background: linear-gradient(180deg, transparent, black);
+    box-shadow: 2px 2px 15px 2px white;
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.445));
+    
+    backdrop-filter: blur(20px);
+}
+.main_texto>p{
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    position: relative;
+    animation: parrafosAnimados 2s forwards;
 }
 
 .main_foto{
@@ -24,5 +50,16 @@
     place-items: center;
     filter: brightness(120%) saturate(130%);
 
+}
+
+@keyframes parrafosAnimados {
+    0% {
+        opacity: 0;
+        right: -25%;
+    }
+    100% {
+        opacity: 1;
+        right: 0;
+    }
 }
 

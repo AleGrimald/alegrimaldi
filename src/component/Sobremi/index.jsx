@@ -3,14 +3,13 @@ import Parrafo from '../Parrafo';
 import './Sobremi.css';
 
 const Sobremi = (props)=>{
-    const {titulo, texto, clase, foto, alter, claseFirma}= props.datosSobremi;
-    return <div className={clase}>
-        <div className='contenedor_texto'>
-            <Parrafo texto={titulo}/>
-            <Parrafo texto={texto}/>
-        </div>
-        <div className='contenedor_img'>
-            <Imagen imagen={foto} alter={alter} clase={claseFirma}/>
+    const {clase_contenedor, h2_texto,p1,p2,p3,clase_titulo,clase_p1,clase_p2,clase_p3}= props.datosSobremi;
+    return <div className={clase_contenedor}>
+        <div className='sobremi_contenedor_texto'>
+            <Parrafo clase={clase_titulo} texto={h2_texto}/>
+            <Parrafo clase={clase_p1} texto={p1}/>
+            <Parrafo clase={clase_p2} texto={p2}/>
+            <Parrafo clase={clase_p3} texto={p3}/>
         </div>
     </div>
 }

@@ -79,13 +79,7 @@ function App() {
     click:[controlInicio, controlSobremi, controlSkill, controlFormacion, controlProyecto, controlContacto]
   }
   const datosMain ={
-    titulo:'Hola, mi nombre es Alejandro y me dedico al desarrollo Forntend de paginas Web',
-    p1:'Soy formado en Desarrollo Web Fornt end (HTML5, CSS3 y JS) y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.',
-    p2:'Ademas comence a cursar la Tecnicatura de Desarrolo de Software en el IES Tafi Viejo - Tucuman',
     clases:{
-      clase_titulo:'main_titulo',
-      clase_p1:'main_p1',
-      clase_p2:'main_p2',
       clase_link:'main_redes',
       clase_foto:'main_img',
       clase_flecha:'main_flecha',
@@ -121,12 +115,15 @@ function App() {
     ]
   }
   const datosSobremi ={
-    titulo:'Sobre mi',
-    texto:'Hola, soy Ale, tengo 31 años y actualmente me encuentro capacitándome en programación. Actualmente trabajo enseño de forma particular Matemáticas. Me adapto bien al entorno y aprendo lo que haga falta. Me gusta hacer las cosas bien, soy minucioso, trato de que las cosas salgan perfectamente. Tengo buen trato con las personas, he atendido al público tanto en locales comerciales como de encargado en un edificio. Espero tener la oportunidad de formar parte del equipo de trabajo, desde ya muchas gracias por su tiempo.',
-    clase:'sobre_texto',
-    foto:'firma.png',
-    alter:'firma del desarrolladors',
-    claseFirma:'firma'
+    p1:'Hola, mi nombre es Alejandro y soy Desarrollor Web Forntend',
+    p2:'Soy graduado en Desarrollo Web Forntend (HTML5, CSS3, JS y REACT) del proyecto Oracle ONE con Alura Latam.',
+    p3:'Ademas comence a cursar la Tecnicatura de Desarrolo de Software en el IES Tafi Viejo - Tucuman, en donde adquiri conocimientos en lenguajes como C#, C, Java, SQL (SMS y MySQL Workbench), entre otras habilidades blandas que me forman como un mejor programador. Tambien sume a mi formacion curso de FreeCodeCamp (Boostrap, JQuery, SASS y Redux,) y Microsoft Learn (C# .NET)',
+    h2_texto:'Sobre mi',
+    clase_contenedor:'contenedor_sobremi',
+    clase_titulo:'sobre_titulo',
+    clase_p1:'sobre_p1',
+    clase_p2:'sobre_p2',
+    clase_p3:'sobre_p3'
   }
   const datosSkill=[
     {
@@ -403,7 +400,7 @@ function App() {
   }
   
   return (
-    <div className="App">
+    <div className="App" style={{backgroundImage:'url(./posibleFondo.png)'}}>
       <Header datosHeader={datosHeader}/>
 
       {

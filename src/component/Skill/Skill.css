@@ -1,31 +1,25 @@
 .skill{
     width: 100%;
-    height: 85dvh;
-    padding: 2rem 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: column wrap;
-}
-.skill_container{
-    width: 30%;
-    height: 180px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    gap: 3rem 0;
 }
 
 .container_img{
     width: 40%;
-    height: 80%;
+    height: 160px;
     
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    
+    gap: 1rem;
     border-radius: 15px;
-    box-shadow:inset 0 0 15px white;
-
-    background-color: rgba(42, 85, 165, 0.3);
+    box-shadow: 0 0 15px rgb(173, 164, 248);
+    background: linear-gradient(180deg,rgba(19, 10, 150, 0.603) 30%,rgba(135, 110, 247, 0.616));
 }

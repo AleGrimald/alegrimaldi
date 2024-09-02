@@ -64,17 +64,13 @@
 
 @keyframes mainRedes {
     0% {
-      top: 0;
-      opacity: 0;
-      transform: rotate(90deg) scale(0);
-    }
-    50% {
-      top: 100px;
-      transform: rotate(180deg);
+        opacity: 0;
+        transform: scale(0);
+        bottom: -10%;
     }
     100% {
-      top: 0;
-      opacity: 1;      
-      transform: rotate(360deg) scale(1);
+        opacity: 1;      
+        transform: scale(1);
+        bottom: 0;
     }
-  }
+}
