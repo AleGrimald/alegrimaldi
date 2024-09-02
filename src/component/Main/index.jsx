@@ -1,5 +1,4 @@
 import './Main.css';
-import Parrafo from '../Parrafo';
 import Ul from '../Ul';
 import Imagen from '../Imagen';
 

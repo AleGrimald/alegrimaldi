@@ -1,4 +1,3 @@
-import Imagen from '../Imagen';
 import Parrafo from '../Parrafo';
 import './Sobremi.css';
 
